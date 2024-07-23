@@ -1,0 +1,25 @@
+:root {
+    font-size: 62.5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* --main-blue:            #071d57;
+    --dark-blue:            #0a3558;
+    --light-blue:           #6fa6d3;
+    
+    --light-blue-d:         #41617a;
+    --light-blue-l:         #7ebbec;
+    
+    --main-blue-t:          #071d57b0;
+    --dark-blue-t:          #0a3558b0;
+    --light-blue-t:         #6fa6d3b0;
+
+    --main-white:           #d2dbed;
+    --light-white:          #ebf0f8;
+
+    --main-white-t:         #d2dbedce; */
+
+}
+
+html, body {
+    height: 100%;    
+}
