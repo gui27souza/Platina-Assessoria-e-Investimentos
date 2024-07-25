@@ -1,0 +1,151 @@
+.about {
+    background-color: #0c0e14;
+    color: #fff;
+
+    padding: var(--section-padding);
+
+    display: flex;
+    flex-flow: column;
+    gap: var(--section-gap);
+}
+
+.about__platina__span {
+    display: inline-block;
+    text-align: justify;
+    hyphens: auto;
+
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+.about__quem-somos {
+    display: flex;
+    flex-flow: column;
+    gap: 1.2rem;
+}
+
+.about__quem-somos__h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.about__quem-somos__span {
+    display: inline-block;
+    text-align: justify;
+    hyphens: auto;
+
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+@media screen
+and (min-width: 300px) {
+
+    .about__platina__span {
+        font-size: 2rem;
+    }
+
+    .about__quem-somos__h2 {
+        font-size: 2.4rem;
+        font-weight: 400;
+    }
+
+    .about__quem-somos__span {
+        font-size: 2rem;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 400px) {
+    
+    
+
+}
+
+
+
+@media screen
+and (min-width: 600px) {
+
+    .about__platina__span {
+        font-size: 2.4rem;
+    }
+
+    .about__quem-somos__h2 {
+        font-size: 3rem;
+    }
+
+    .about__quem-somos__span {
+        font-size: 2.4rem;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 900px) {
+
+    .about__platina__span {
+        font-size: 2.8rem;
+    }
+
+    .about__quem-somos__h2 {
+        font-size: 3.2rem;
+    }
+
+    .about__quem-somos__span {
+        font-size: 2.8rem;
+    }
+    
+}
+
+
+
+@media screen
+and (min-width: 1200px) {
+    
+
+
+}
+
+
+
+@media screen
+and (min-width: 1500px) {
+    
+    .about__platina__span {
+        font-size: 3.2rem;
+    }
+
+    .about__quem-somos__h2 {
+        font-size: 4rem;
+    }
+
+    .about__quem-somos__span {
+        font-size: 3.2rem;
+    }
+
+}
+
+
+
+@media screen
+and (min-width: 1800px) {
+    
+    .about__platina__span {
+        font-size: 3.6rem;
+    }
+
+    .about__quem-somos__h2 {
+        font-size: 4.2rem;
+    }
+
+    .about__quem-somos__span {
+        font-size: 3.6rem;
+    }
+
+}

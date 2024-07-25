@@ -1,7 +1,7 @@
 /* Header Style */
 
     .header {
-        background-color: #00000093;
+        background-color: #020b27;
     }
 
     .header__tel__span {
@@ -24,6 +24,15 @@
         fill: #000;
 
         transform: scale(1.1);
+    }
+
+    @media screen
+    and (min-width: 600px) {
+
+        .header {
+            background-color: #00000093;
+        }
+
     }
 
     @media screen
@@ -52,9 +61,6 @@
     justify-content: center;
 
     width: 100%;
-
-    position: fixed;
-    top: 0;
 
     z-index: 5;
 }
@@ -172,10 +178,10 @@ and (min-width: 400px) {
 @media screen
 and (min-width: 600px) {
 
-    /* .header {
-        position: sticky;
+    .header {        
+        position: fixed;
         top: 0;
-    } */
+    }
     
     .header__wrapper {
         flex-flow: row;
