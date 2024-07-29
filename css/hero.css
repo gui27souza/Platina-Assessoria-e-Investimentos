@@ -27,22 +27,74 @@
     -webkit-text-fill-color: transparent;
 }
 
-.hero-wrapper {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    gap: 15rem;
+.hero-wrapper-inside {
+    display: none;
+}
 
-    height: 20rem;
+.hero__card-inside {
+    display: none;
+}
+
+.hero-wrapper-outside {
+    background-color: #0c0e14;
+    
     width: 100%;
+
+    padding: var(--section-padding);
+    padding-bottom: calc(var(--section-padding)*.3);
+
+    display: grid;
+    grid-auto-rows: 1fr;
+    gap: var(--section-gap);
 }
 
-.hero__card {
-    height: 40rem;
-    width: 30rem;
-    background-color: greenyellow;
+.hero__card-outside {
+    background-color: #eaecff;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
 }
 
+.hero__card-outside__img {
+    height: 10rem;
+    width: 100%;
+    background-color: aqua;
+}
+
+.hero__card-outside__text {
+    padding: var(--inner-padding);
+
+    height: 100%;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--inner-gap);
+}
+
+.hero__card-outside__text__span {
+    font-size: calc(var(--p-font-size)*.7);
+    text-align: justify;
+    hyphens: auto;
+}
+
+.hero__card-outside__text__link {
+    background-color: #0A1049;
+    color: #fff;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 1rem;
+
+    font-size: calc(var(--p-font-size)*.7);
+    text-align: center;
+}
 
 
 @media screen
@@ -50,6 +102,10 @@ and (min-width: 300px) {
 
     .hero__title {
         font-size: calc(2.8rem + 1vw);
+    }
+
+    .hero__card-outside__img {
+        height: 15rem;
     }
 
 }
@@ -61,6 +117,10 @@ and (min-width: 400px) {
     
     .hero__title {
         font-size: calc(3rem + 2vw);
+    }
+
+    .hero__card-outside__img {
+        height: 20rem;
     }
 
 }
@@ -83,6 +143,26 @@ and (min-width: 600px) {
 
 
 @media screen
+and (min-width: 650px) {
+
+    .hero__card-outside {
+        flex-flow: row;
+    }
+
+    .hero__card-outside__img {
+        height: 100%;
+        width: 40%;
+    }
+
+    .hero__card-outside__text {
+        width: 60%;
+    }
+
+}
+
+
+
+@media screen
 and (min-width: 900px) {
 
     .hero {
@@ -91,6 +171,31 @@ and (min-width: 900px) {
     
     .hero__title {
         font-size: 8rem;
+    }
+
+    .hero-wrapper-outside {
+        display: none;
+    }
+
+    .hero-wrapper-inside {
+        display: flex;
+        justify-content: space-evenly;
+
+        /* height: 25rem; */
+        width: 100%;
+    }
+
+    .hero__card-inside {
+        height: 100%;
+        width: 20rem;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .hero__card-inside__img {
+        background-color: aqua;
+        height: 5rem;
+        width: 100%;
     }
 
 }
