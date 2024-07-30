@@ -167,6 +167,8 @@ and (min-width: 900px) {
 
     .hero {
         height: 100vh;
+
+        justify-content: end;
     }
     
     .hero__title {
@@ -181,23 +183,54 @@ and (min-width: 900px) {
         display: flex;
         justify-content: space-evenly;
 
-        /* height: 25rem; */
         width: 100%;
+
+        margin-bottom: 10rem;
     }
 
     .hero__card-inside {
+        background-color: #fafbff;
+        
         height: 100%;
-        width: 20rem;
+        width: 35rem;
         display: flex;
         flex-flow: column;
     }
 
     .hero__card-inside__img {
         background-color: aqua;
-        height: 5rem;
+        height: 20rem;
         width: 100%;
     }
 
+    .hero__card-inside__text {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        gap: var(--inner-gap);
+
+        height: 100%;
+
+        padding: 2rem;
+    }
+
+    .hero__card-inside__text__span {
+        font-size: 1.6rem;
+
+        text-align: justify;
+        hyphens: auto;
+    }
+
+    .hero__card-inside__text__link {
+        background-color: #0A1049;
+        color: #fff;
+
+        text-decoration: none;
+        font-size: 1.8rem;
+        text-align: center;
+
+        padding: 1rem;
+    }
 }
 
 
@@ -222,6 +255,10 @@ and (min-width: 1500px) {
     
     .hero__title {
         font-size: 9rem;
+    }
+
+    .hero__card-inside__text__span {
+        font-size: 1.8rem;
     }
 
 }
